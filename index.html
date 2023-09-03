@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0%;
+            padding: 0%;
+        }
+        
+        body{
+            background-color: #fdfdfdb0;
+        }
+
+        .header{
+            height: 100px;
+            background-color: rgb(0, 174, 255);
+            display: flex;
+            flex-direction: row;
+            box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.2);
+        }
+
+        #title{
+            font-size: 50px;
+            font-weight: bold;
+            color: #fff;
+            margin: auto;
+        }
+
+
+
+        .container{
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .tile{
+            width: 250px;
+            height: 300px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.2);
+        }
+
+        .tile img{
+            height: 240px;
+            width: 240px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            margin: 0px auto;
+            margin-top: 5px;
+            box-shadow: 0px 4px 9px 1px rgba(0, 0, 0, 0.2);
+        }
+
+        .desc{
+            font-size: 20px;
+            color: grey;
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+
+        .date{
+            font-size: 10px;
+            color: grey;
+            margin-left: 10px;
+            margin-top: 5px;
+        }
+
+        .one{
+            margin-bottom: 20px;
+        }
+
+        .btnDiv{
+            margin-top: 10px;
+            display: flex;
+        }
+
+        #btn{
+            background-color: transparent;
+            font-weight: bold;
+            font-size: 20px;
+            color: rgb(0, 174, 255);
+            border: rgb(0, 174, 255) solid 3px;
+            margin: auto;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        #btn:hover{
+            transition-duration: 0.5s;
+            background-color: rgb(0, 174, 255);
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <p id="title">Gallery</p>
+    </div>
+    <br>
+
+    <div class="main">
+        <div class="container one">
+        <div class="tile">
+            <img src="images/sp1.jpg" alt="sp1" />
+            <p class="desc">Spiderman</p>
+            <p class="date">15/08/1947</p>
+        </div>
+
+        <div class="tile">
+            <img src="images/sp2.jpg" alt="sp2" />
+            <p class="desc">Spiderman</p>
+            <p class="date">15/08/1947</p>
+        </div>
+
+        <div class="tile">
+            <img src="images/sp3.jpg" alt="sp3" />
+            <p class="desc">Spiderman</p>
+            <p class="date">15/08/1947</p>
+        </div>
+
+        <div class="tile">
+            <img src="images/sp3.jpg" alt="sp3" />
+            <p class="desc">Spiderman</p>
+            <p class="date">15/08/1947</p>
+        </div>
+    </div>
+
+    <div class="container two">
+        <div class="tile">
+            <img src="images/sp4.jpg" alt="sp4" />
+            <p class="desc">Spiderman</p>
+            <p class="date">15/08/1947</p>
+        </div>
+
+        <div class="tile">
+            <img src="images/sp5.jpg" alt="sp5" />
+            <p class="desc">Spiderman</p>
+            <p class="date">15/08/1947</p>
+        </div>
+
+        <div class="tile">
+            <img src="images/sp6.jpg" alt="sp6" />
+            <p class="desc">Spiderman</p>
+            <p class="date">15/08/1947</p>
+        </div>
+
+        <div class="tile">
+            <img src="images/sp3.jpg" alt="sp3" />
+            <p class="desc">Spiderman</p>
+            <p class="date">15/08/1947</p>
+        </div>
+    </div>
+    </div>
+
+    <br>
+    <div class="btnDiv">
+        <button id="btn">Add Pic to Gallery</button>
+    </div>
+</body>
+</html>
